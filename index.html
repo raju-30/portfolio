@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loader</title>
+
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #1a0010;
+}
+
+/* Loader */
+.loader {
+  max-width: fit-content;
+  color: rgb(242, 255, 240);
+  font-size: 50px;
+  font-family: "Bookman Old Style", serif;
+  position: relative;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.loader span {
+  animation: cut 2s infinite;
+}
+
+/* Hover effect */
+.loader:hover {
+  color: #fcffdf;
+}
+
+/* Blur glow line (dark pink) */
+.loader::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 6px;
+  border-radius: 4px;
+  background-color: #d63384; /* dark pink */
+  top: 0;
+  filter: blur(10px);
+  animation: scan 2s infinite;
+  left: 0;
+  z-index: 0;
+}
+
+/* Main scan line (dark pink) */
+.loader::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  border-radius: 4px;
+  background-color: #c2185b; /* dark pink strong */
+  top: 0;
+  animation: scan 2s infinite;
+  left: 0;
+  z-index: 1;
+}
+
+/* Animation */
+@keyframes scan {
+  0% { top: 0px; }
+  25% { top: 54px; }
+  50% { top: 0px; }
+  75% { top: 54px; }
+}
+
+@keyframes cut {
+  0% { clip-path: inset(0 0 0 0); }
+  25% { clip-path: inset(100% 0 0 0); }
+  50% { clip-path: inset(0 0 100% 0); }
+  75% { clip-path: inset(0 0 0 0); }
+}
+</style>
+</head>
+
+<body>
+
+<p class="loader"><span>UCSR</span></p>
+<script>
+  setTimeout(() => {
+  window.location.href = "/portfolio/Portal.html";
+}, 1275);
+</script>
+
+
+</body>
+</html>

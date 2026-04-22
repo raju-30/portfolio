@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+
+<link rel="stylesheet" href="/Styles/about.css">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <!-- MOBILE MENU ICON -->
+<div class="menu-icon" onclick="toggleMenu()">
+  <i id="menuIcon" class="fa-solid fa-bars"></i>
+</div>
+
+<!-- SIDE MENU -->
+<div class="side-menu" id="sideMenu">
+  <a href="Portal.html">Portal</a>
+  <a href="#contact">Contact</a>
+  <a href="Lab.html">Projects</a>
+  <a href="ReachMe.html">Conenct</a>
+
+</div>
+
+<!-- NAV -->
+<div class="nav">
+
+
+  <div class="nav-buttons">
+    <a href="Portal.html"><button class="btn">Portal</button></a>
+    <a href="#contact"><button class="btn">Contact</button></a>
+    <a href="Lab.html"><button class="btn">Projects</button></a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="section-card">
+  <section class="about">
+
+    <div class="about-content">
+      <div class="image-box"></div>
+
+      <div class="text-box">
+        <h1>ABOUT ME</h1>
+        <h3>UMA CHANDRA - DEVELOPER</h3>
+
+        <p>
+          Tech-enthusiastic B.Tech student at Vasireddy Venkatadri Institute of Technology,
+          passionate about software development, web technologies, and AI.
+          Dedicated to continuous learning, hands-on projects, and growth through internships
+          and team collaboration.
+        </p>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+<!-- TIMELINE -->
+<div class="section-card">
+  <section class="dark-section">
+
+    <h2>Education </h2>
+
+    <div class="timeline">
+      <div class="item completed">
+        <div class="dot"></div>
+        <div class="content">
+          <h4>SSC – Sunshine High School</h4>
+          <p>2020 – 2021</p>
+          <span>100%</span>
+        </div>
+      </div>
+
+      <div class="item completed">
+        <div class="dot"></div>
+        <div class="content">
+          <h4>Intermediate – Narayana Junior College</h4>
+          <p>2021 – 2023</p>
+          <span>96.1%</span>
+        </div>
+      </div>
+
+      <div class="item current">
+        <div class="dot"></div>
+        <div class="content">
+          <h4>B.Tech – VVIT</h4>
+          <p>2023 – Present</p>
+          <span>CGPA: 7.9</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>Skills </h2>
+
+    <div class="skills">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+      <div>React</div>
+      <div>Node.js</div>
+      <div>SQL</div>
+      <div>Git</div>
+      <div>Vercel</div>
+    </div>
+<div class="cert-container">
+
+  <div class="cert-card">
+    <img src="https://res.cloudinary.com/dbo0t5d3t/image/upload/v1776749993/NPTEL_CYBERSECURITY_fv9svt.jpg" alt="Certificate 1">
+    <a href="https://drive.google.com/file/d/1IKOG_dDkGDKB0P-sqmJKmAKorGW-jZpW/view?usp=drive_link" target="_blank" class="cert-popup">View</a>
+  </div>
+
+  <div class="cert-card">
+    <img src="https://res.cloudinary.com/dbo0t5d3t/image/upload/v1776749993/AWS_CERTIFICATE_m13lxr.jpg" alt="Certificate 2">
+    <a href="https://drive.google.com/file/d/1PRD6dv-QUV7JCANNlcUFyU9GoyICWqBP/view?usp=drive_link" target="_blank" class="cert-popup">View</a>
+  </div>
+
+  <div class="cert-card">
+    <img src="https://res.cloudinary.com/dbo0t5d3t/image/upload/v1776749993/L4G_njzm9s.jpg" alt="Certificate 3">
+    <a href="https://drive.google.com/file/d/1eaRFOyWMtStUaeTEax6FuzLc-nOHz-5L/view?usp=drive_link" target="_blank" class="cert-popup">View</a>
+  </div>
+
+</div>
+
+  </section>
+</div>
+
+<!-- CONTACT -->
+<div class="section-card">
+  <section id="contact" class="contact">
+
+    <h2>Contact Me 📬</h2>
+
+    <p class="mail">
+  <i class="fas fa-envelope"></i>
+  <a href="mailto:umachandra0539@gmail.com">umachandra0539@gmail.com</a>
+</p>
+
+    <a href="ReachMe.html">
+      <button class="btn">Connect</button>
+    </a>
+
+  </section>
+</div>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("sideMenu");
+  const icon = document.getElementById("menuIcon");
+
+  menu.classList.toggle("active");
+
+  icon.classList.toggle("fa-bars");
+  icon.classList.toggle("fa-xmark");
+
+  icon.style.transform = "rotate(180deg)";
+  setTimeout(() => {
+    icon.style.transform = "rotate(0deg)";
+  }, 300);
+}
+</script>
+
+</body>
+</html>

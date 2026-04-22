@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Hero</title>
+  <link rel="stylesheet" href="/Styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<section class="hero">
+  <!-- Connect Button (Top Right) -->
+  <div class="top-right">
+    <a href="ReachMe.html">
+  <button class="connect-btn">Connect</button>
+</a>
+<a href="Journey.html">
+  <button class="connect-btn">Journey</button>
+</a>
+  </div>
+  <!-- Mobile Menu Icon -->
+<div class="menu-icon" onclick="toggleMenu()">
+  <i class="fa-solid fa-bars"></i>
+</div>
+
+<!-- Side Navigation -->
+<div class="side-menu" id="sideMenu">
+  <a href="ReachMe.html">Connect</a>
+  <a href="Journey.html">Journey</a>
+  <a href="Lab.html">Projects</a>
+  <a href="https://drive.google.com/file/d/1L5p8BUrqr_QcS97tHzJJDaMGRvJ7ttDm/view?usp=drive_link">Resume</a>
+</div>
+
+  <!-- Hero Content -->
+  <div class="hero-content">
+    <h3>Hi,</h3>
+    <h1>I am <span class="name">Uma Chandra.</span></h1>
+    <h2><span id="typed"></span></h2>
+
+    <!-- CTA Button -->
+    <a href="Lab.html">
+  <button class="start-btn">
+    <span>Let's Get Started</span>
+  </button>
+</a>
+<a href="https://drive.google.com/file/d/1BOSaZ3dfHlYEv0HcISEvhd2jLxpn6oyV/view?usp=drive_link">
+  <button class="resume-btn">View Resume</button>
+</a>
+  
+  </div>
+</section>
+<!-- RECENT PROJECT SECTION -->
+<section class="recent-project">
+
+  <h2 class="section-title">Recent Project</h2>
+
+  <div class="project-card">
+
+    <h3>MediTrack</h3>
+    <p>
+    A group project to digitize patient records and enable online appointment booking.
+    </p>
+
+    <div class="project-buttons">
+      <a href="https://github.com/umachandra-30/MediTrack" target="_blank">
+        <button class="project-btn">Code</button>
+      </a>
+
+      <a href="Lab.html">
+        <button class="project-btn outline">View More Projects</button>
+      </a>
+    </div>
+
+  </div>
+
+</section>
+<footer class="footer">
+  <div class="footer-content">
+
+    <p class="footer-name">Uma Chandra</p>
+    <p class="footer-tagline">Passionate about Web Development</p>
+    
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="https://github.com/umachandra-30"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/uma-chandra-chakravaram"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:umachandra0539@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-links">
+      <a href="Portal.html">Portal</a>
+      <a href="Journey.html">Journey</a>
+      <a href="Lab.html">Projects</a>
+      <a href="ReachMe.html">Connect</a>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

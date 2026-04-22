@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects</title>
+
+<link rel="stylesheet" href="/Styles/projects.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+
+<body>
+  <!-- MOBILE MENU ICON -->
+<div class="menu-icon" onclick="toggleMenu()">
+  <i id="menuIcon" class="fa-solid fa-bars"></i>
+</div>
+
+<!-- SIDE MENU -->
+<div class="side-menu" id="sideMenu">
+  <a href="Portal.html">Portal</a>
+  <a href="Journey.html">Journey</a>
+  <a href="ReachMe.html">Connect</a>
+</div>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="nav-buttons">
+    <a href="Portal.html" class="btn">Portal</a>
+    <a href="Journey.html" class="btn">Journey</a>
+  </div>
+</div>
+
+<!-- PROJECT SECTION -->
+<section class="projects">
+
+  <h1><span id="typed"></span></h1>
+
+  <div class="cards">
+
+    <!-- PROJECT 1 -->
+    <div class="card">
+      <div class="card-front">
+        <p class="tip">Food Landing Page</p>
+        <p class="second-text">HTML • CSS • JS</p>
+      </div>
+
+      <div class="card-back">
+        <p class="desc">
+          A basic frontend project to learn and implement HTML, CSS, and JavaScript concepts
+        </p>
+
+        <div class="buttons">
+          <a href="https://ucsr-project1.vercel.app/" target="_blank" class="btn">Website</a>
+          <a href="https://github.com/umachandra-30/SCT_WD_1" target="_blank" class="btn">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="card">
+      <div class="card-front">
+        <p class="tip">MediTrack</p>
+        <p class="second-text">React • Express • Mongo</p>
+      </div>
+
+      <div class="card-back">
+        <p class="desc">
+          A group project to digitize patient records and enable online appointment booking.
+        </p>
+
+        <div class="buttons">
+          <a href="#" class="btn">Website</a>
+          <a href="https://github.com/umachandra-30/MediTrack" target="_blank" class="btn">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="card">
+      <div class="card-front">
+        <p class="tip">Weather Porject</p>
+        <p class="second-text">Html • CSS • JS</p>
+      </div>
+
+      <div class="card-back">
+        <p class="desc">Developed a web app using OpenWeather API to fetch and display real-time weather data.</p>
+
+        <div class="buttons">
+          <a href="https://ucweather.vercel.app/" class="btn">Website</a>
+          <a href="https://github.com/umachandra-30/weather" class="btn">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="card">
+      <div class="card-front">
+        <p class="tip">GitQuest</p>
+        <p class="second-text">Python</p>
+      </div>
+
+      <div class="card-back">
+        <p class="desc">Built a Retrieval-Augmented Generation (RAG) model using Python and OpenAI API to answer Git-related queries. Integrated API-based response generation with contextual retrieval for accurate answers</p>
+
+        <div class="buttons">
+          <a href="#" class="btn">Website</a>
+          <a href="https://github.com/umachandra-30/git-quest" class="btn">Code</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TYPED SCRIPT -->
+<script>
+var typed = new Typed("#typed", {
+  strings: [
+    "My Projects ",
+    "Things I’ve Built ",
+    "Explore My Work "
+  ],
+  typeSpeed: 80,
+  backSpeed: 40,
+  loop: true
+});
+</script>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("sideMenu");
+  const icon = document.getElementById("menuIcon");
+
+  menu.classList.toggle("active");
+
+  icon.classList.toggle("fa-bars");
+  icon.classList.toggle("fa-xmark");
+
+  icon.style.transform = "rotate(180deg)";
+  setTimeout(() => {
+    icon.style.transform = "rotate(0deg)";
+  }, 300);
+}
+</script>
+
+</body>
+</html>

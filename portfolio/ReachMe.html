@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="/Styles/social.css">
+</head>
+
+<body>
+<!-- MOBILE MENU ICON -->
+<div class="menu-icon" onclick="toggleMenu()">
+  <i id="menuIcon" class="fa-solid fa-bars"></i>
+</div>
+
+<!-- SIDE MENU -->
+<div class="side-menu" id="sideMenu">
+  <a href="Portal.html">Portal</a>
+  <a href="Journey.html">Journey</a>
+  <a href="Lab.html">Projects</a>
+</div>
+  <!-- NAV -->
+  <div class="nav">
+    <div class="nav-buttons">
+      <a href="Portal.html" class="btn">Portal</a>
+      <a href="Journey.html" class="btn">Journey</a>
+      <a href="Lab.html" class="btn">Projects</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1><span id="typed"></span></h1>
+
+    <!-- SOCIAL -->
+    <h2>Social Media</h2>
+    <div class="social-container">
+
+      <div class="card">
+        <div class="card-details">
+          <i class="fab fa-github"></i>
+          <p class="text-title">GitHub</p>
+        </div>
+        <a href="https://github.com/umachandra-30" target="_blank" class="card-button">Follow</a>
+      </div>
+
+      <div class="card">
+        <div class="card-details">
+          <i class="fab fa-linkedin"></i>
+          <p class="text-title">LinkedIn</p>
+        </div>
+        <a href="https://www.linkedin.com/in/uma-chandra-chakravaram" target="_blank" class="card-button">Connect</a>
+      </div>
+
+      <div class="card">
+        <div class="card-details">
+          <i class="fab fa-instagram"></i>
+          <p class="text-title">Instagram</p>
+        </div>
+        <a href="https://www.instagram.com/_.raju.___here/" target="_blank" class="card-button">Follow</a>
+      </div>
+
+    </div>
+
+    <!-- CODING -->
+    <h2 class="coding-title">Coding Profiles</h2>
+<div class="social-container">
+
+  <!-- HackerRank -->
+  <div class="card coding">
+    <div class="card-details">
+      <i class="fas fa-laptop-code"></i>
+      <p class="text-title">HackerRank</p>
+    </div>
+    <a href="https://www.hackerrank.com/umachandra4821" target="_blank" class="card-button">
+      Visit
+    </a>
+  </div>
+
+  <!-- CodeChef -->
+  <div class="card coding">
+    <div class="card-details">
+      <i class="fas fa-code"></i>
+      <p class="text-title">CodeChef</p>
+    </div>
+    <a href="https://www.codechef.com/users/vvit23bq1a0539" target="_blank" class="card-button">
+      Visit
+    </a>
+  </div>
+
+</div>
+    <!-- 🔥 NEW SECTION -->
+    
+</div>
+
+  </div>
+
+  <!-- Typed JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed("#typed", {
+      strings: ["Find Me Online", "Let's Connect", "Build Together"],
+      typeSpeed: 80,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
+  <script>
+function toggleMenu() {
+  const menu = document.getElementById("sideMenu");
+  const icon = document.getElementById("menuIcon");
+
+  menu.classList.toggle("active");
+
+  icon.classList.toggle("fa-bars");
+  icon.classList.toggle("fa-xmark");
+
+  icon.style.transform = "rotate(180deg)";
+  setTimeout(() => {
+    icon.style.transform = "rotate(0deg)";
+  }, 300);
+}
+</script>
+  
+
+</body>
+</html>
